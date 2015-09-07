@@ -73,5 +73,11 @@
     <!-- This is an odd width, but we're trying to match the font closely to keep things working
          on devices that don't yet have Roboto -->
     <dimen name="forecast_widget_text_width">38dp</dimen>
+    <dimen name="digital_text_size">40dp</dimen>
+    <dimen name="digital_text_size_round">45dp</dimen>
+    <dimen name="digital_text_size_small">18dp</dimen>
+    <dimen name="digital_y_offset">60dp</dimen>
+    <dimen name="digital_date_margin">5dp</dimen>
+    <dimen name="digital_line_width">50dp</dimen>
 
 </resources>
