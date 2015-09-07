@@ -343,8 +343,8 @@ public class MyWatchFace extends CanvasWatchFaceService {
         public void onLoadComplete(android.support.v4.content.Loader<Cursor> loader, Cursor data) {
             if (null == data || data.getCount() == 0) {
                 mWeatherId = 501;
-                mLowString = Utility.formatTemperature(MyWatchFace.this, 16.0) + "°";
-                mHighString = Utility.formatTemperature(MyWatchFace.this, 28.0) + "°";
+                mLowString = Utility.formatTemperature(MyWatchFace.this, 16.0);
+                mHighString = Utility.formatTemperature(MyWatchFace.this, 28.0);
                 return;
             }
             data.moveToFirst();
@@ -352,10 +352,10 @@ public class MyWatchFace extends CanvasWatchFaceService {
 
             // Read low temperature from cursor and update view
             double low = data.getDouble(COL_WEATHER_MIN_TEMP);
-            mLowString = Utility.formatTemperature(MyWatchFace.this, low) + "°";
+            mLowString = Utility.formatTemperature(MyWatchFace.this, low);
 
             double high = data.getDouble(COL_WEATHER_MAX_TEMP);
-            mHighString = Utility.formatTemperature(MyWatchFace.this, high) + "°";
+            mHighString = Utility.formatTemperature(MyWatchFace.this, high);
 
         }
     }
